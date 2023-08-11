@@ -1,0 +1,158 @@
+h2 {
+    text-align: center;
+    color: rgb(237, 255, 255);
+}
+
+.usuario {
+    color: rgb(73, 87, 90);
+    margin-left: 1%;
+    font-weight: 600;
+    font-size: 17px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.usuarioContainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.alert {
+    background-color: rgb(194, 0, 0);
+    width: 500px;
+    border-radius: 15px;
+    margin-right: 20px;
+    position: absolute;
+    left: 70%;
+    border: 1px solid black;
+    text-align: center;
+}
+
+.alertSuccess {
+    background-color: rgb(2, 192, 49);
+    width: 300px;
+    border-radius: 15px;
+    margin-right: 20px;
+    position: absolute;
+    left: 70%;
+    border: 1px solid black;
+    text-align: center;
+}
+
+.button {
+    border: none;
+    background-color: transparent;
+    margin: 8px;
+}
+
+.button:hover {
+    border: none;
+    cursor: pointer;
+    color: rgb(237, 255, 255);
+    background-color: transparent;
+}
+
+.btnCriar {
+    margin-top: 10px;
+    margin-left: 1%;
+    background-color: rgb(2, 192, 49);
+    font-size: 15px;
+    font-weight: 500;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(237, 255, 255);
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid rgb(66, 66, 66);
+}
+
+.btnDeletar {
+    margin-left: 3%;
+    font-size: 15px;
+    font-weight: 500;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgb(194, 0, 0);
+    color: rgb(237, 255, 255);
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid rgb(66, 66, 66);
+}
+
+.btnCriar:hover {
+    cursor: pointer;
+    margin-top: 10px;
+    margin-left: 1%;
+    background-color: rgb(2, 192, 49);
+    font-size: 15px;
+    font-weight: 500;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(237, 255, 255);
+    padding: 8px;
+    border-radius: 5px;
+}
+
+.btnDeletar:hover {
+    cursor: pointer;
+    margin-left: 3%;
+    font-size: 15px;
+    font-weight: 500;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgb(194, 0, 0);
+    color: rgb(237, 255, 255);
+    padding: 8px;
+    border-radius: 5px;
+}
+
+.card {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 5px;
+    justify-content: space-evenly;
+
+    .container {
+        margin-top: 25px;
+        border: 2px solid black;
+        box-sizing: border-box;
+        width: 23%;
+        height: 210px;
+        border-radius: 15px;
+        max-width: 500px;
+        column-gap: 10px;
+
+        .botao {
+            display: flex;
+            justify-content: space-between;
+            padding: 15px;
+        }
+        .botao:hover {
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            padding: 15px;
+        }
+
+        .nome_titulo {
+            margin-left: 10px;
+            font-size: 14px;
+            font-weight: 600;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        .arquivo {
+            width: auto;
+            margin-left: 10px;
+            display: flex;
+            font-size: 14px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: 600;
+        }
+
+        .labelArquivo {
+            word-break: break-all;
+            padding: 10px;
+            font-weight: 300;
+        }
+
+        .file {
+            display: none;
+        }
+    }
+}
