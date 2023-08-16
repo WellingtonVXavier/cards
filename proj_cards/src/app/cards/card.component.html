@@ -17,14 +17,24 @@
         <h4>
             {{mensagemAlert}}
         </h4>
-            <button (click)="deletarCard(true)" class="button">Confirma</button>
-            <button (click)="deletarCard(false)" class="button">Cancelar</button>
+        <button (click)="deletarCard(true)" class="button">Confirma</button>
+        <button (click)="deletarCard(false)" class="button">Cancelar</button>
     </div>
 
     <div class="alertSuccess" *ngIf="alertSuccess">
         <h4>
             {{mensagemAlert}}
         </h4>
+    </div>
+
+    <div class="alertaSalva" *ngIf="alertSalva">
+        <h4>
+            {{mensagemSalva}}
+        </h4>
+    </div>
+
+    <div class="alertanenhumArquivo" *ngIf="alertanenhumArquivo">
+        {{mensagemSalva}}
     </div>
 </div>
 
@@ -81,7 +91,7 @@
         <div class="nome_titulo">
             Card: #{{ card.id }}
         </div>
-        <hr>
+
 
         <!-- Nome do Arquivo -->
         <input type="file" id="file" name="file" multiple class="file" (change)="uploadFiles($event, i)" #fileInput />

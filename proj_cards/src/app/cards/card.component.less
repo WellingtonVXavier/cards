@@ -18,7 +18,7 @@ h2 {
 
 .alert {
     background-color: rgb(194, 0, 0);
-    width: 500px;
+    width: auto;
     border-radius: 15px;
     margin-right: 20px;
     position: absolute;
@@ -29,13 +29,39 @@ h2 {
 
 .alertSuccess {
     background-color: rgb(2, 192, 49);
-    width: 300px;
+    width: auto;
     border-radius: 15px;
     margin-right: 20px;
     position: absolute;
     left: 70%;
     border: 1px solid black;
     text-align: center;
+}
+
+.alertanenhumArquivo{
+    background-color: rgb(194, 0, 0);
+    width: auto;
+    border-radius: 15px;
+    margin-right: 20px;
+    position: absolute;
+    padding: 20px;
+    left: 70%;
+    border: 1px solid black;
+    text-align: center;
+}
+
+.alertaSalva {
+    background-color: rgb(2, 192, 49);
+    width: auto;
+    border-radius: 15px;
+    margin-right: 20px;
+    padding: 20px;
+    position: absolute;
+    left: 70%;
+    border: 1px solid black;
+    text-align: center;
+    word-break: break-all;
+    
 }
 
 .button {
@@ -108,7 +134,7 @@ h2 {
     justify-content: space-evenly;
 
     .container {
-        margin-top: 25px;
+        margin-top: 30px;
         border: 2px solid black;
         box-sizing: border-box;
         width: 23%;
@@ -122,6 +148,7 @@ h2 {
             justify-content: space-between;
             padding: 15px;
         }
+
         .botao:hover {
             cursor: pointer;
             display: flex;
@@ -134,9 +161,11 @@ h2 {
             font-size: 14px;
             font-weight: 600;
             font-family: Verdana, Geneva, Tahoma, sans-serif;
+            text-decoration: underline;
         }
-
+        
         .arquivo {
+            margin-top: 15px;
             width: auto;
             margin-left: 10px;
             display: flex;

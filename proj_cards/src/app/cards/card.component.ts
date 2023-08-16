@@ -14,10 +14,17 @@ export class cardComponent implements OnInit {
     lista: Array<{ nome: string }> = [];
     conditionClick: boolean = true;
     usuario: string = "Welington Vaz Xavier";
+    
+    cardDelete: Card = new Card();
+
     alert: boolean = false;
     alertSuccess: boolean = false;
-    cardDelete: Card = new Card();
+
     mensagemAlert: string = "";
+
+    alertanenhumArquivo: boolean = false;
+    alertSalva: boolean = false;
+    mensagemSalva: string = "";
 
     constructor() { }
 
@@ -78,9 +85,18 @@ export class cardComponent implements OnInit {
     salvarArquivo(cardIndex: number) {
         const card = this.cards[cardIndex];
         if (card.file) {
-            alert(`Arquivo ${card.fileName} salvo com sucesso.`);
+            this.alertSalva = true;
+            this.mensagemSalva = `Arquivo ${card.fileName} salvo com sucesso.`;
+            setTimeout(() => {
+                this.alertSalva = false;
+            }, 2000)
+            
         } else {
-            alert('Nenhum arquivo para salvar.');
+            this.alertanenhumArquivo = true;
+            this.mensagemSalva = `Nenhum arquivo para salvar.`;                
+            setTimeout(() => {
+                this.alertanenhumArquivo = false;
+            }, 3000);
         }
     }
 }
